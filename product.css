@@ -1,0 +1,174 @@
+body {
+  font-family: 'Sree Krushnadevaraya';
+  color: #020202;
+}
+
+:root {
+  font-size: 16px;
+}
+
+#dzaky-site-navbar {
+  display: none;
+  animation: slide-in 0.5s;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+#dzaky-site-navbar.hidden {
+  animation: slide-out 0.5s;
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.dzaky-text-shadow {
+  text-shadow: 4px 2px 6px #6b7177;
+}
+
+.dzaky-fs-title {
+  font-size: 1.5rem;
+}
+
+.dzaky-fs-desc {
+  font-size: 0.8rem;
+}
+
+.dzaky-image {
+  object-fit: cover;
+}
+
+.dzaky-parallax-img {
+  position: fixed;
+  top: 40%;
+  transform: translate(-100%, -20%);
+  z-index: 4;
+  opacity: 1;
+}
+
+.dzaky-top-95 {
+  top: 95%;
+}
+
+.dzaky-text-justify {
+  text-align: justify;
+}
+
+.dzaky-vw-95 {
+  width: 95vw;
+}
+
+.dzaky-parallax-text {
+  position: fixed;
+  top: 40%;
+  z-index: 4;
+  opacity: 1;
+}
+
+.dzaky-padding {
+  padding-top: 4rem;
+}
+
+.dzaky-bg-dark {
+  background-color: #050505;
+}
+
+.dzaky-btn-dark {
+  background-color: #050505;
+}
+
+.dzaky-bg-lightgray {
+  background-color: #383838;
+}
+
+.dzaky-bg-lightgray:hover {
+  cursor: pointer;
+  background-color: #252525;
+}
+
+.dzaky-btn-dark:hover {
+  background-color: #323232;
+}
+
+.dzaky-bg-grey {
+  background-color: #f5f5f5;
+}
+
+.dzaky-card-section {
+  display: none !important;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .dzaky-fs-title {
+    font-size: 3rem;
+  }
+
+  .dzaky-fs-desc {
+    font-size: 1rem;
+  }
+
+  .dzaky-padding {
+    padding-top: 6rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .dzaky-fs-title {
+    font-size: 3.5rem;
+  }
+
+  .dzaky-fs-desc {
+    font-size: 1.5rem;
+  }
+
+  .dzaky-padding {
+    padding-top: 8rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .dzaky-fs-title {
+    font-size: 4rem;
+  }
+
+  .dzaky-fs-desc {
+    font-size: 2rem;
+  }
+
+  .dzaky-padding {
+    padding-top: 10rem;
+  }
+
+  .dzaky-card-section {
+    display: flex !important;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .dzaky-padding {
+    padding-top: 12rem;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .dzaky-padding {
+    padding-top: 14rem;
+  }
+}
